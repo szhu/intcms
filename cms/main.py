@@ -36,7 +36,7 @@ def cms_replace(content_old, context):
 	import re
 	content_new = ''; prev_end = 0
 
-	includes = re.finditer(r'(\\?)<?!--\s*%@\s*([\w_-]+)\s*:([^>]*)-->?', content_old, flags=0)
+	includes = re.finditer(r'(\\?)<?!--\s*%@\s*([\w_-~!@#$%^&*]+)\s*:([^(--)]*)-->?', content_old, flags=0)
 	for include in includes:
 		content_new += content_old[prev_end:include.start()]
 		backslash = include.group(1)
