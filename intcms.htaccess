@@ -1,0 +1,10 @@
+RewriteEngine On
+Options All
+
+# DYNAMIC -------------------------------------------------------
+
+ErrorDocument 401 /_/intcms/go.cgi?401
+ErrorDocument 403 /_/intcms/go.cgi?403
+ErrorDocument 404 /_/intcms/go.cgi?404
+ErrorDocument 500 /_/intcms/go.cgi?500
+DirectoryIndex index.html index.cgi index.php /_/intcms/go.cgi

@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#!/usr/bin/env python -B
 
 ERROR_TEMPLATE_START = '''<style>
 #_python_error_%s, #_python_error_%s * {
@@ -51,11 +52,14 @@ ERROR_TEMPLATE_END = '''
 </div>'''
 
 try:
-	try:
-		import os
-		if os.environ['QUERY_STRING'] == 'cprofile': import cProfile; cProfile.run("execfile('main.py')", 'cProfile.out')
-		else: raise KeyError
-	except KeyError:
+	from os import getenv, chdir
+	from sys import path as syspath
+	# chdir('.')
+	syspath.append('.')
+	if getenv('QUERY_STRING') == 'cprofile':
+		import cProfile
+		cProfile.run("execfile('main.py')", 'cProfile.out')
+	else:
 		execfile('main.py')
 
 except:

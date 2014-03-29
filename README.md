@@ -1,49 +1,66 @@
 # intcms
 
-A lightweight, self-contained CMS for Python 2.4+ and sane people.
-
-_By [@interestinglythere](https://github.com/interestinglythere), in case you didn't figure out from the name._
-
+A lightweight, self-contained CMS for Python 2.6+ and sane people.
 
 ## What?
 
-**intcms** is content management system (CMS) for small websites. It features a simple templating system centered around filters or 'includes', which allow for transformations of up to a single argument. 
+**intcms** is content management system (CMS) for small websites. It’s a lightweight wrapper around the [Jinja2][] templating engine. It supports:
+
+- hierarchal templating
+- error pages (can be part of same hierarchy)
+- redirects
+- quickly add ninja globals and filters
+- directory listing
+
+**intcms** is largely file-based and runs on Apache. It is designed for people on small web hosts with big ideas. It probably isn't very efficient unless you set up caching, but should be adequate for personal sites (or you could set up caching).
+
+[jinja2]: http://jinja.pocoo.org/
 
 
 ## Why?
 
-1. **It's small.** < 300 SLOC. You can probably edit this stuff in Notepad if you want.
-2. **It's easy to learn.** There are pages. There are static files. There are widgets and other types of includes — learn only what you need.
-3. **It's manageable** for a single sane non-developer person. You'll only have to work with a few files, and it's all pretty logical.
-4. **It's flexible.** Want to change where CMS code resides? Want to change the static files directory? (Spoiler: there is no such special directory.) **intcms** doesn't assume much about your setup. Want to extend the CMS? Want to mess with the internals? The code's right in front of you.
-5. **It has virtually no dependencies** beyond Apache, UNIX, CGI, and Python. There are lots of web hosts still running Python 2.4 and only basic CGI; **intcms** is for those who'd rather deal with it then* complain.
-6. **It doesn't require root access.** **intcms** works within the limitations set by most webhosts. The only configuration required is four lines (found below) inserted in `.htaccess`. It's about as plug-and-play as you can get.
-
-\* That's not a typo; demand the latest software. Or, if you're on a free webhost, ask very nicely.
++ **It’s in Python.** For people who like Python.
++ **It’s small,** less than 300 lines of code. It shouldn't be that hard to hack.
++ **It’s easy to learn.** It’s based on Jinja, which is similar to (if not the same as) templating languages you already use.
++ **It’s file-based.** Just use `page.html` for templates, instead of static pages. It plays nicely with Apache, so you can still use `index.html` for static pages.
++ **It’s flexible.** Want to change where CMS code resides? **intcms** doesn't assume much about your setup.
++ **It has just a few dependencies:** Apache, CGI, and Python. Lots of web hosts don't run Node or Ruby on Rails. That doesn't mean you can't have the website you want.
++ **It doesn't require root access.** The only configuration required is a few lines in `.htaccess` (see `intcms.htaccess`).
 
 
 ## How?
 
-1. Download the files in `cms`.
-2. Add this to your root `.htaccess` file:
+### Quick start
 
-		RewriteEngine On
-		RewriteBase /
-		RewriteCond %{REQUEST_FILENAME} !-f
-		RewriteRule ^(.*)$ /cms/go.cgi/$1 [QSA,L]
+1. Download this repo.
+2. Create this directory structure in `public_html`:
 
-3. Edit `pages/_/page.html` to make your homepage!
-4. I think that's it.
+       + .htaccess    (copy from intcms.htaccess from the repo)
+       + _/
+         + intcms     (intcms from the repo)
+         + templates/ (global templates go here)
+         + page.html  (homepage template goes here)
 
 
-## The Deets
+3. Download dependencies `jinja2` and `markupsafe`. No root access? Just place the modules in `intcms`.
+4. Add the content in `intcms.htaccess` to your `.htaccess` file.
+5. Make your home page in `_/page.html`! (You can also put `page.html` in the web root if you want.)
 
-Coming soon!
+### Some more fun
+
+- In any directory:
+    - add `redirect.{301,302,permanently,temporarily}.txt` to make a redirect
+    - add `redirect.{301,302,permanently,temporarily}.wildcard.txt` to make a wildcard redirect
+    - manually display an error page anywhere by making a `page.html` with: `{% do status.set(404) %}`
+- Want to make the page template publicly hidden? Rename it to `.htpage.html`
+- `_/templates/` is for global templates.
+    - Want a template for your entire site? Put a `site.html` template there and begin your page templates with `{% extends "site.html" %}`
+    - Want directory listings? Make a `directory.html` template in `templates`.
 
 ## License
 
-I'm not sure yet, so &copy; all rights reserved&hellip; for now. Expect a pretty open license eventually. Contact me if you would like to fork/use for the time being.
+Use **intcms** as you please. Have fun with it, please.
 
-## Who?
+## Who uses **intcms**?
 
-A guy who goes by [Sean Zhu](http://interestinglythere.com/) has been writing and using predecessors of **intcms** for 4 years. He finally decided to publish the code because of reasons.
+**intcms** is the culmination of [Sean Zhu](http://github.com/interestinglythere)’s work on [interestinglythere.com](http://interestinglythere.com/) over the past 6 years. It also powers [szhu.me](http://szhu.me/). [oratory.berkeley.edu](http://oratory.berkeley.edu/) runs an older version of **intcms**.
