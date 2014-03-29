@@ -33,17 +33,20 @@ A lightweight, self-contained CMS for Python 2.6+ and sane people.
 ### Quick start
 
 1. Download this repo.
+
 2. Create this directory structure in `public_html`:
 
-       + .htaccess    (copy from intcms.htaccess from the repo)
-       + _/
-         + intcms     (intcms from the repo)
-         + templates/ (global templates go here)
-         + page.html  (homepage template goes here)
+        + .htaccess    (copy from intcms.htaccess from the repo)
+        + _/
+          + intcms     (intcms from the repo)
+          + templates/ (global templates go here)
+          + page.html  (homepage template goes here)
 
 
 3. Download dependencies `jinja2` and `markupsafe`. No root access? Just place the modules in `intcms`.
+
 4. Add the content in `intcms.htaccess` to your `.htaccess` file.
+
 5. Make your home page in `_/page.html`! (You can also put `page.html` in the web root if you want.)
 
 ### Some more fun
