@@ -1,0 +1,11 @@
+#ErrorDocument 301 /main/error/pages/301.shtml
+#ErrorDocument 302 /main/error/pages/302.shtml
+ErrorDocument 401 /main/error/pages/401.shtml
+ErrorDocument 403 /main/error/pages/403.shtml
+ErrorDocument 404 /main/error/pages/404.shtml
+ErrorDocument 500 /main/error/pages/500.shtml
+
+DirectoryIndex index.html index.cgi index.php /main/templates/intcms.cgi
+
+RewriteEngine On
+Options All

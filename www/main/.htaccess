@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "/main/"
+AuthUserFile "/home/szhu/.htpasswds/public_html/main/passwd"
+require valid-user

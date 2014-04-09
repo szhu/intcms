@@ -1,0 +1,6 @@
+/cardly/caches
+/cardly/users
+/system/logs
+*.pyc
+.DS_Store
+.git
