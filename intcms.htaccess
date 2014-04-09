@@ -1,0 +1,13 @@
+DirectoryIndex index.cgi
+
+ErrorDocument 301 /main/error/301.shtml
+ErrorDocument 302 /main/error/302.shtml
+ErrorDocument 401 /main/error/401.shtml
+ErrorDocument 403 /main/error/403.shtml
+ErrorDocument 404 /main/error/404.shtml
+ErrorDocument 500 /main/error/500.shtml
+
+RewriteEngine on
+Options All
+AddType image/icns icns
+

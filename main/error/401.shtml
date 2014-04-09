@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html> 
+<head> 
+<!--
+Hello.  Welcome to sihongzhu.vlexo.net / interestinglythere.co.cc.  These webpages are hand-coded, but I don't have any formal web coding training.  If you have any suggestions, please let me know!  Also, I edit the live copy of my web pages, so if a page looks okay one second and wierd the next... well now you know why.
+ 
+Because of The Oatmeal (no affiliation), I just have to put some ASCII art here:
+  ~################################~
+ ####,######:   ####=        ########
+#######:#####                #########
+#####        #########################
+#####        ###########           ###
+#####        ########?            :###
+#####        ######8             #####
+#####        ######             ######
+#####        ###7             ########
+#####        ###             #########
+#####        ##           =###########
+#####        #       #################
+#####        #~########      #########
+#####N       ####7    I##Z ###########
+#####D##$##      #####################
+####### =###,  ###################### 
+  ~#########D8#####################~ 
+ 
+Sean Zhu
+sihongzhu.vlexo.net@gmail.com
+--> 
+<title>InterestinglyThere: 401</title> 
+<meta name="robots" content="noindex,nofollow"> 
+<link rel="shortcut icon" href="/favicon.ico" /> 
+ 
+<style> 
+html {
+  background-color: #eee;
+  font-family: verdana, sans-serif;
+  font-size: 8pt;
+}
+body {
+  background-color: white;
+  margin: 0.5em auto;
+  border: 1px solid gainsboro;
+  max-width: 700px;
+}
+#siteheader {
+  margin-top: 0em;
+  padding-top: 0em;
+  background-color: #ccc;
+}
+#siteheader .box {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+#site-titlebox, #site-navbar {
+  padding-top: 0.3em;
+  padding-bottom: 0.4em;
+}
+#site-navbar a {padding: 3px;}
+#site-titlebox {
+  background-color: #333;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 120%;
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  float: left;
+}
+#site-navbar {
+  vertical-align: middle;
+}
+#site-search {
+  white-space:nowrap;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  vertical-align: middle;
+  float: right;
+}
+ 
+#main { padding: 3em; padding-top: 0em; }
+#content { margin-top: 1em; margin-bottom: 2em; }
+#footer { text-align: center; font-size: smaller; }
+ 
+ 
+h1,h2,h3,h4,h5,h6 {margin-bottom: 0.1em;}
+h1 {
+  margin-top: 0.5em;
+  font-size: 22pt;
+  color: #666;
+  font-weight: normal
+}
+h2 {
+  margin-top: 0.5em;
+  font-size: 12pt;
+  font-weight: normal
+}
+h3 {
+  font-size: 10pt;
+  font-weight: normal
+}
+ 
+.right {text-align: right;}
+.smaller {font-size: smaller;}
+.inline-block {display: inline-block;}
+form {margin: 0px; padding: 0px;}
+blockquote {
+  margin-left: 1em;
+  padding-left: .5em;
+  border-left: 2px solid #ccc;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+img {border: none;}
+a {
+  color: #00e;
+  text-decoration: none;
+}
+a:hover {background-color: #bbb;}
+a:active {background-color: #888;}
+table {
+  color: inherit;
+  font: inherit;
+}
+ 
+</style> 
+ 
+<style> 
+  #nav-school {color: inherit;}
+</style> 
+ 
+ 
+</head> 
+ 
+<body> 
+ 
+<div id=siteheader> 
+ <a href="/"><span id=site-titlebox class=box>InterestinglyThere</span></a> 
+ <span id=site-search class=box> 
+   <comment> 
+    <form action="/main/search/" id="cse-search-box"> 
+                <input type="search" results="10" name="q" size="18" /><input type="submit" name="sa" value="&#x2192;" /> 
+        <input type="hidden" name="cx" value="012857360322719689069:wuosum1wtue" /> 
+        <input type="hidden" name="cof" value="FORID:10" /> 
+        <input type="hidden" name="ie" value="UTF-8" /> 
+    </form> 
+   </comment> 
+ </span> 
+ <span id=site-navbar class=box> 
+   <a href="/" id=nav-home>Home</a>|<a id=nav-school>Error</a>|<a href="/software/" id=nav-software>Software</a>|<a href="/systemicons/" id=nav-mac>Mac</a>|<a href="/events/" id=nav-events>Events</a>|<a href="/about/" id=nav-about>About</a> 
+ </span> 
+ <div style="clear: both;"></div> 
+</div> 
+ 
+<div id=main> 
+ 
+<div id=header> 
+<h1>InterestinglyThere</h1> 
+<p>Interestingly, there's an error:</p> 
+</div> 
+ 
+<hr> 
+ 
+<div id=content> 
+<p><!--#echo var="REQUEST_URI" --></p> 
+<h2>401 Authorization Required</h2> 
+<p>This server could not verify that you are authorized to access the document requested. Either you supplied the wrong credentials (e.g., bad password), or your browser doesn't understand how to supply the credentials required.</p> 
+<p>Please <a href="/about/#contact">tell me about this error</a>.</p> 
+<p><a title="Homepage" href="/">Homepage</a></p> 
+</div> 
+ 
+<hr> 
+ 
+<div id=footer> 
+ 
+ <div> 
+ 
+  Hosting provided by <a href="http://vlexofree.com"> 
+   <!--http://vlexofree.com/wiki/images/wikiX.png--> 
+   <img height="10" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAt0lEQVQImV3IsS5DUQAA0HPvk2pitlADic1G2Mp/2Aw2o++QMvoDm43BQKKCMBlMSJBI00ETA8+791o6OeMJ8xedVbFaD01uoLRiFb/LVUwhDjWpm3Ppl1Qu1blbqjwIsHA+tyWHQQo5RTrPG2+HFVrNT3mZWmvvxBCWhkejXn1bqzBbP9THJbn5/UiPn3ujffSN7eIOZzjwzzXe0YY4zkXMjHMZAiZxinu8YhsrsIkvTGMCTzj5A2emRUn+xzICAAAAAElFTkSuQmCC" /> 
+    VlexoFree Hosting</a> 
+ </div> 
+ <div> 
+   <!--http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png--> 
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"> 
+   <img height=11 alt="Creative Commons License BY-NC-ND" style="border-width:0;vertical-align:text-top;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAALCAYAAADoWAqZAAABj2lDQ1BJQ0MgUHJvZmlsZQAAeNqtkU1LG1EUhp8bsYLYQOn4gSDclWYRS1AEBRGSWajYRQyCSXaTmWkMjJPLnZuoP8C94E5c+AGuSnElLv0B2Uihi1IE/0FB6KbIdHFbsmkphb5w4Dnv5pz3HMj0PKWiDLAbG11ZLclqrS6HPvOCVwDg+Ykqlstv+aO+fUIAfJz1lIr4N43oaq0OwgGcpuUc4DQsLwPOnlEGRBlw/B0vABEAeb1VcUEcAdmm5TMg27B8DWS7ftOAuAMKcdCKQXwFFoMw8SGTA4yvtIHMKTBbrdWlXc1swMoUDPT6Xj2B91cwPt33chMwug23833vaRMBiLFe8m5+DgAxUoLBhzR9moahY3g+StPvF2n6fAkDX+Au9ju6+/MuQtzD33qbzfb2B2Dn/p5tfgAKcL4G28OwcQgnjzDzAV7fQPklbC0h7s2vsrcCYNL1olZDeyYMZGW1JN121NaJ8vyQ/ysT7hsAt60OdKu5Y2RRqSiUbntXdUyo83I99t/k5VyhsADwA9uVc6ovch2zAAACh0lEQVRIx+2Vz0sUYRjHP7MIBvljx8sKYeVYx+rwin+Azd6CgnAOCd4Uupf767JgxWxF2qGD/glbp1SQmA5dPCw7h4xMSF4PmubF0TRICN4OsZOO766udVr6wsD7Ms/7fZ/38z4vjwHcUErx6vVLovLevGXyxSSu65JKpaimZDJJqVTi0ZOHJDoTAFzoukiyP8nO9g6NKKXUtGEYGMCkDuDm102y93Nks9ma8A5CXF1b5UFhDID2tjjz7+bJ5/ONCpAKwLIO4MTT56yvrSOlPJGh7/v09vYyODTIrds3Aeg6d56x/BizM7MNC7AJELqAhfcL5LK5EI7jOEgpsW2bYrGI4zh4nodlWRSLRYQQ2LbN4sfFEGAsFsO27SMAlVLh2DCMQwlFE6yVvG5e8a629jgPXW61FNPD+8Dut12E+M3WcRyEECilEEJQKBTwfZ+trS1SqVRYpUIIlj8vhz7bO9v09fVpNzYM41DCB8e14Oku4cizioCox0OXW90Av+/tAWCaJkEQIKUMYbqui5QSy7IwTZORkREGBgb+bM6fg+/v/8Boql5FUVCVpKOVUfmih6x1wH/hcRJpAZ5taQEgCAJM08SyLHzfD5uFaZpIKQmCgHQ6zdTUlPZWm5vPoH7+3S1X4nQVWWt99CmexuPUAK9eu0Jra2sIzXVdPM/DMAwsy8J1XYQQdHR04Hketm0DUC6X6e7pDn3i7XFKpdKJK/A00lVwvb7R2Ho8qnbhZ4/H2fiywcrKyv8ufEwX9nUBg0N3yNzL4Lou6XT6WMPR0VEuXe4J4bW3xZmbmWtIeAfVBEzrfiQ6EwzfHSaTyaCUIpPJVDXpv97P0qclcvnsoec7PjFOo+sXjiZi3EbuK24AAAAASUVORK5CYII=" /> 
+  </a> 
+  &copy; 2010 InterestinglyThere (Sean Zhu)
+  &lt;<a href="http://sihongzhu.vlexo.net/">sihongzhu.vlexo.net</a>&gt; and
+  &lt;<a href="http://interestinglythere.co.cc/">interestinglythere.co.cc</a>&gt;
+ <div> 
+</div> 
+ 
+</div> 
+ 
+</body> 
+ 
+</html> 
