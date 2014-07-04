@@ -58,6 +58,8 @@ ERROR_TEMPLATE_END = '''
 
 try:
     from os import getenv
+    import sys
+    sys.path.append('.')
     if getenv('QUERY_STRING') == 'cprofile':
         import cProfile
         cProfile.run("execfile('main.py')", 'cProfile.out')
