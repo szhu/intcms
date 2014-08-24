@@ -43,7 +43,7 @@ def parse_environment():
 
 def get_http_info():
     from os import getenv
-    hostname = getenv('HTTP_HOST')
+    hostname = getenv('HTTP_HOST', 'localhost')
     https = getenv('HTTPS') == 'on'
     protocol = 'https' if https else 'http'
     host_url = protocol + '://' + hostname
